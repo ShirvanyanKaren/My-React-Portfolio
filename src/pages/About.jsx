@@ -1,38 +1,41 @@
 import '../style/About.scss'
 import {
-    faAngular,
     faCss3,
     faGitAlt,
     faHtml5,
+    faJava,
     faJsSquare,
     faNode,
-    faNodeJs,
     faReact,
+    faSquareJs,
 } from '@fortawesome/free-brands-svg-icons'
-import { useEffect, useState } from 'react'
 
-import AnimeLetters from '../components/AnimatedLetters'
+import 'animate.css';
+
+import AnimatedLetters from '../components/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useEffect, useState } from 'react';
 
 
 export default function About() {
-    const [letters, setLetters] = useState('text-animate')
+    const [letterClass, setLetterClass] = useState('text-animate')
 
+  
     useEffect(() => {
-      return setTimeout(() => {
-        setLetters('text-animate-hover')
-      }, 3000)
-    }, [])
+        return setTimeout(() => {
+          setLetterClass('text-animate-hover')
+        }, 3000)
+      }, [])
     return (
         <>
         
         <section className="container about-me">
             
         <h1>
-        <AnimeLetters
-              letters={letters}
-              arr={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              id={15}
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              idx={15}
             />
         </h1>
         <p> I am a motivated university undergraduate student pursuing a
@@ -58,7 +61,7 @@ export default function About() {
              <div className="stage-cube-cont">
              <div className="cubespinner">
                <div className="face1">
-                 <FontAwesomeIcon icon={faNode} color="#DD0031" />
+                 <FontAwesomeIcon icon={faNode} color="#68a063" />
                </div>
                <div className="face2">
                  <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -73,7 +76,7 @@ export default function About() {
                  <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
                </div>
                <div className="face6">
-                 <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                 <FontAwesomeIcon icon={faJava} color="#2488e2" />
                </div>
              </div>
            </div>

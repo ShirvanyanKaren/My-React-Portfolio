@@ -2,21 +2,47 @@
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
-    // position: absolute;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;
+    position: absolute;
+    animation: fadeIn 0.5s forwards;
+    // animation-delay: 0.5s;
     color:#ccc;
     // display: block;
     // justify-content: center;
     // align-items: center;
-    h1{
+    h1 {
         text-align: center;
+        font-weight: 400;
+        color: #3254a8;
+        font-size: 50px;
+        font-family:  Helvetica;
     }
+
+    p {
+        font-family: sans-serif;
+        font-weight: 300;
+        min-width: fit-content;
+        animation: pulse 1s;
+
+        &:nth-of-type(1) {
+            animation-delay: 1.5s;
+        }
+        &:nth-of-type(2) {
+            animation-delay: 1.5s;
+        }
+        &:nth-of-type(3) {
+            animation-delay: 1.5s;
+        }
+
+    }
+
+
   }
   .stage-cube-cont {
     width: 50%;
-    height: 100%;
-    top: 0%;
+    height: 90%;
+    // align-items: start;
+    animation:  6s forwards;
+    top: 5%;
     padding-top: 18%;
     position: absolute;
     right: 25%;
@@ -24,7 +50,7 @@
   }
   .cubespinner {
     animation-name: spincube;
-    margin-top: 70%;
+    margin-top: 30%;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 12s;
