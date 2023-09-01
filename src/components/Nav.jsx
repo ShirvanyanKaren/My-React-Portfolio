@@ -15,13 +15,13 @@ return (
              <FontAwesomeIcon  color="#4d4d4e" />
         </NavLink>
         <nav>
-        <NavLink exact="true" className="home-page" to="/" >
+        <NavLink exact="true" className="home-page" to="/Home" >
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true"  className="about" to="/about" >
+        <NavLink exact="true"  className="about-page" to="/About" >
             <FontAwesomeIcon icon={faHomeUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" className="contact" to="/portfolio" >
+        <NavLink exact="true" className="contact-me" to="/portfolio" >
             <FontAwesomeIcon exact="true" icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
         <NavLink key={1} exact="true" className="active" to="/contact" >
