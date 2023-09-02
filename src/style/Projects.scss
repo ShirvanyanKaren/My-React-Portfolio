@@ -1,0 +1,50 @@
+.project-card {
+    border: 1px solid #706ba9;
+    border-radius: 8px;
+    margin: 20px;
+    width: fit-content;
+    padding: 20px;
+  
+    background-color: #004fa0;
+    box-shadow: 0 6px 6px rgba(53, 48, 48, 0.1);
+    animation: backInUp 0.8s;
+  
+    .project-card-content {
+      text-align: center;
+  
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: white;
+
+      }
+  
+      img {
+        max-width: 100%;
+        width: 400px;
+        height: auto;
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+       
+      }
+  
+      .project-links {
+        margin-top: 10px;
+  
+        .icon {
+          font-size: 1.5rem;
+          margin: 0 10px;
+          color: #0073e6; /* Adjust the color as needed */
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #a6c5e5; 
+            animation: bounceIn 1s;
+          }
+        }
+      }
+    }
+  }
+  

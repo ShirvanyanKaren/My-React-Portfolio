@@ -57,22 +57,22 @@
 
       &:first-child {
         &:after {
-          content: "HOME";
+          content: "ABOUT";
         }
       }
       &:nth-child(2) {
         &:after {
-          content: "ABOUT";
+          content: "PORTFOLIO";
         }
       }
       &:nth-child(3) {
         &:after {
-          content: "CONTACT";
+          content: "RESUME";
         }
       }
       &:last-child {
         &:after {
-          content: "PORTFOLIO";
+          content: "CONTACT";
         }
       }
     }

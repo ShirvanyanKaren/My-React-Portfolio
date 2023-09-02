@@ -9,8 +9,7 @@ import {
 
 } from '@fortawesome/free-brands-svg-icons'
 
-import 'animate.css';
-
+import myPic from "../images/imageofme.png"
 import AnimatedLetters from '../components/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react';
@@ -24,14 +23,22 @@ export default function About() {
         <>
         
         <section className="container about-me">
-            
-        <h1 className="text-animate-h">
+        
+
+       <div className='content'>
+        <div className='myImage'>
+       <img src={myPic}/>
+       </div>
+       <div className='summary'>
+        <div>
+       <h1 className="text-animate-h">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               idx={15}
             />
         </h1>
+        </div>
         <p> I am a motivated university undergraduate student pursuing a
           major in Finance with a minor in computer science. I am eager to
           launch my career in the myriad of dynamic realms of finance and fintech.
@@ -49,7 +56,8 @@ export default function About() {
           With a passion in finance and technology, I am poised to contribute to the ever-changing
           of the tech and financial tech industries.
         </p>
-        
+        </div>
+        </div>
       </section>
 
              <div className="stage-cube-cont">

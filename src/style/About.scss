@@ -1,14 +1,16 @@
 .about-me {
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+   
     position: absolute;
     animation: fadeInLeft 1s forwards;
     color:#ccc;
     h1 {
         text-align: center;
+        font-family: serif;
         font-weight: 400;
-        color: #white;
+        color: #ccc;
         font-size: 50px;
     }
 
@@ -28,7 +30,26 @@
         }
 
     }
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .myImage{
+    margin-top: auto;
+    width: auto;
+    height: 100%;
+    display: block;
+    align-items: start;
+  }
 
+ .summary{
+  width: 80%;
+  margin-left: auto;
+ }
+
+  img {
+    width: 200px;
 
   }
   .stage-cube-cont {
