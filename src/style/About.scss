@@ -3,34 +3,28 @@
     margin-left: 10%;
     margin-right: 10%;
     position: absolute;
-    animation: fadeIn 0.5s forwards;
-    // animation-delay: 0.5s;
+    animation: fadeInLeft 1s forwards;
     color:#ccc;
-    // display: block;
-    // justify-content: center;
-    // align-items: center;
     h1 {
         text-align: center;
         font-weight: 400;
-        color: #3254a8;
+        color: #white;
         font-size: 50px;
-        font-family:  Helvetica;
     }
 
     p {
         font-family: sans-serif;
         font-weight: 300;
         min-width: fit-content;
-        animation: pulse 1s;
 
         &:nth-of-type(1) {
-            animation-delay: 1.5s;
+            animation-delay: 0.5s;
         }
         &:nth-of-type(2) {
-            animation-delay: 1.5s;
+            animation-delay: 0.5s;
         }
         &:nth-of-type(3) {
-            animation-delay: 1.5s;
+            animation-delay: 0.5s;
         }
 
     }
@@ -41,7 +35,7 @@
     width: 50%;
     height: 90%;
     // align-items: start;
-    animation:  6s forwards;
+    animation: fadeIn 6s forwards;
     top: 5%;
     padding-top: 18%;
     position: absolute;

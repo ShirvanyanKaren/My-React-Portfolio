@@ -1,37 +1,31 @@
 import '../style/About.scss'
 import {
     faCss3,
-    faGitAlt,
     faHtml5,
     faJava,
     faJsSquare,
     faNode,
     faReact,
-    faSquareJs,
+
 } from '@fortawesome/free-brands-svg-icons'
 
 import 'animate.css';
 
 import AnimatedLetters from '../components/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 export default function About() {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass] = useState('text-animate')
 
   
-    useEffect(() => {
-        return setTimeout(() => {
-          setLetterClass('text-animate-hover')
-        }, 3000)
-      }, [])
     return (
         <>
         
         <section className="container about-me">
             
-        <h1>
+        <h1 className="text-animate-h">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}

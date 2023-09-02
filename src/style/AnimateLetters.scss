@@ -10,7 +10,7 @@
   min-width: 10px;
 }
 
-.text-animate-hover {
+.text-animate-h {
   min-width: 10px;
   display: inline-block;
   animation-fill-mode: both;
@@ -18,7 +18,8 @@
   &:hover {
     animation: rubberBand 1s;
     color: #ffd700;
-  }
+  
+}
 }
 
 @for $i from 1 through 35 {
