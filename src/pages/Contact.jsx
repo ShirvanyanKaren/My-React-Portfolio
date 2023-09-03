@@ -39,7 +39,7 @@ return (
         <label type="subject">Message</label>
         <textarea id="subject" name="subject" placeholder="Your Message" style={{ height: '200px' }} required></textarea>
 
-        <input type="submit" value="Submit" />
+        <button type="submit" >Submit</button>
 
       </form>
     </div>

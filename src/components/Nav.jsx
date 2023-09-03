@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../style/Nav.scss'
 import { NavLink } from 'react-router-dom';
-import { faHomeUser,faEnvelope, faFolder, faFile, faFileArrowUp, faFileAlt } from '@fortawesome/free-solid-svg-icons';
-import { faDochub, faFlipboard } from '@fortawesome/free-brands-svg-icons';
+import { faHomeUser,faEnvelope, faFolder, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Navbar = () => {
@@ -13,10 +13,10 @@ return (
         <NavLink exact="true"  className="about-page" to="/" >
             <FontAwesomeIcon icon={faHomeUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" className="home-page" to="/Resume" >
+        <NavLink exact="true" className="home-page" to="/Portfolio" >
             <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" className="portfolio-page" to="/Portfolio" >
+        <NavLink exact="true" className="portfolio-page" to="/Resume" >
             <FontAwesomeIcon icon={faFileAlt} color="#4d4d4e" />
         </NavLink>
         <NavLink exact="true" className="contact-me" to="/Contact" >

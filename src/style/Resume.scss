@@ -1,6 +1,111 @@
-.container {
-    margin-top: 10%;
-    button {
-        background-color: blue;
+$btn-color: #1a0fed;
+$hover-color: #858ee5;
+$background-color: #004fa0;
+
+.resume-container {
+  margin-top: 10%;
+  background-color: $background-color;
+  color: #ccc;
+  height: auto;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 5%;
+  border-radius: 8px;
+  animation: fadeInUp 1s;
+
+  .resume-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  button {
+    background-color: $btn-color;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-color;
+      transform: scale(1.05);
     }
+    svg {
+      color: #ccc;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  h2 {
+    font-family: serif;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 15px;
+      font-family: Georgia;
+    }
+  }
+  .program-list {
+    display: flex;
+    justify-content: space-evenly;
+
+    ul {
+      list-style: none;
+      padding: 5px;
+    }
+
+    li {
+      margin: 10px;
+    }
+    img {
+      width: 70px;
+      height: 60px;
+      margin: 15px;
+      animation: bounceInUp 1.5s;
+    }
+  }
+  .education-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; /* Vertically align items to the top */
+    ul {
+      list-style: none;
+      margin-top: 5%;
+    }
+
+    h3 {
+      font-family: serif;
+      margin-bottom: 0px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .uni-names {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      li {
+        margin-top: 80px;
+      }
+    }
+
+    img {
+      width: 140px;
+      height: 140px;
+      margin: 15px;
+      animation: bounceInUp 1.5s;
+    }
+  }
 }

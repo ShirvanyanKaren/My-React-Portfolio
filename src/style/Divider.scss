@@ -1,0 +1,26 @@
+
+
+.divider {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .divider-icon {
+    width: 30px;
+  }
+  
+ 
+  .divider-icon svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #eee8e8; 
+  }
+  
