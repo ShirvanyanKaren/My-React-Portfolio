@@ -15,6 +15,7 @@ import HandleBars from "../images/logos/handlebars.png"
 import Berkeley from "../images/logos/berkeley.png"
 import Csun from "../images/logos/csun.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ResumeDl from "../../Assets/Resume.pdf"
 
 
 const Resume = () => {
@@ -24,7 +25,7 @@ const Resume = () => {
         <h2>My Resume</h2>
         <Divider iconClass={faFileCirclePlus} />
         <div className="resume-btn">
-        <button type="submit" ><FontAwesomeIcon icon={faDownload}/></button>
+        <a href={ResumeDl}><button type="submit" ><FontAwesomeIcon icon={faDownload}/></button></a>
         </div>
         
         <div className="skills">
