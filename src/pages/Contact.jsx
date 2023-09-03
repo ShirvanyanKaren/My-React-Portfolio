@@ -1,18 +1,25 @@
 import '../style/Contact.scss'
 import 'animate.css'
 import AnimatedLetters from '../components/AnimatedLetters'
-import { useEffect, useState } from 'react';
-
+import { useEffect, useState } from 'react'
+import Footer from '../components/Footer'
+// import emailjs from 'emailjs-com';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    useEffect(() => {
+        setTimeout(() => {
+            setLetterClass('text-animate-active')
+        }, 3000)
+    }, [])
 
 return (
    
     <>
+    
     <div className="heading">
 
-    <h1 className='text-animate-h'>
+    <h1>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
@@ -43,6 +50,7 @@ return (
 
       </form>
     </div>
+    <Footer />
     </>
    
 )

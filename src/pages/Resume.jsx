@@ -16,11 +16,14 @@ import Berkeley from "../images/logos/berkeley.png"
 import Csun from "../images/logos/csun.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ResumeDl from "../../Assets/Resume.pdf"
+import Footer from "../components/Footer";
 
 
 const Resume = () => {
+
   return (
     <>
+      
       <section className="resume-container">
         <h2>My Resume</h2>
         <Divider iconClass={faFileCirclePlus} />
@@ -83,6 +86,7 @@ const Resume = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

@@ -10,13 +10,13 @@
   min-width: 10px;
 }
 
-.text-animate-h {
+.text-animate-active {
   min-width: 10px;
   display: inline-block;
   animation-fill-mode: both;
 
   &:hover {
-    animation: rubberBand 1s;
+    animation: bounce 1s;
     color: #ffd700;
   
 }

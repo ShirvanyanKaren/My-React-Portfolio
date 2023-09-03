@@ -3,14 +3,14 @@ $hover-color: #858ee5;
 $background-color: #004fa0;
 
 .resume-container {
-  margin-top: 10%;
+
   background-color: $background-color;
   color: #ccc;
   height: auto;
   width: 50%;
   margin: auto;
   padding: 20px;
-  margin-top: 5%;
+  margin-top: 8%;
   border-radius: 8px;
   animation: fadeInUp 1s;
 
@@ -107,5 +107,16 @@ $background-color: #004fa0;
       margin: 15px;
       animation: bounceInUp 1.5s;
     }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

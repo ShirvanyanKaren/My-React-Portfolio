@@ -2,12 +2,15 @@ $primary-color: #3254a8;
 @import 'animate.css';
 
 
-body {
-    
-    background-image: url('../images/background.avif');
-    background-size: cover;
-   
+#tsparticles {
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -10;
 }
+
+
+
 
 input, 
 textarea {

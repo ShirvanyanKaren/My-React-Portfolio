@@ -1,4 +1,5 @@
-import '../style/About.scss'
+import React, { useEffect, useState } from 'react';
+import '../style/About.scss';
 import {
     faCss3,
     faHtml5,
@@ -6,25 +7,22 @@ import {
     faJsSquare,
     faNode,
     faReact,
-
-} from '@fortawesome/free-brands-svg-icons'
-
-import myPic from "../images/imageofme.png"
-import AnimatedLetters from '../components/AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useState } from 'react';
-
+} from '@fortawesome/free-brands-svg-icons';
+import myPic from "../images/imageofme.png";
+import AnimatedLetters from '../components/AnimatedLetters';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink } from 'react-router-dom';
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function About() {
-    const [letterClass] = useState('text-animate')
-
+    const [letterClass] = useState('text-animate');
   
+
+
     return (
         <>
-        
-        <section className="container about-me">
-        
 
+     <section className="container about-me">
        <div className='content'>
         <div className='myImage'>
        <img src={myPic}/>
@@ -82,8 +80,30 @@ export default function About() {
                </div>
              </div>
            </div>
+    <div className="about-footer">
+      <h1>Connect with me!</h1>
+      <div className="links">
+        <NavLink
+          exact="true"
+          className="github"
+          to="github.com/ShirvanyanKaren"
+        >
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          className="linkedin"
+          to="https://www.linkedin.com/in/karen-shirvanyan-8a46a01a3/"
+        >
+          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+        </NavLink>
+        <NavLink exact="true" className="instagram" to="instagram.com/slshivii">
+          <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+        </NavLink>
+      </div>
+    </div>
+    </>
+            
         
-        
-       </>
-    )
+    );
 }

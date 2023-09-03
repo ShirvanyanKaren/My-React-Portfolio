@@ -3,7 +3,7 @@
     margin-left: 5%;
     margin-right: 5%;
    
-    position: absolute;
+    position: relative;
     animation: fadeInLeft 1s forwards;
     color:#ccc;
     h1 {
@@ -35,6 +35,8 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+
   .myImage{
     margin-top: auto;
     width: auto;
@@ -53,19 +55,26 @@
 
   }
   .stage-cube-cont {
+ 
+    transform: scale(0.8);
+
     width: 50%;
     height: 90%;
-    // align-items: start;
+   
     animation: fadeIn 6s forwards;
     top: 5%;
-    padding-top: 18%;
+    padding-top: 12%;
     position: absolute;
     right: 25%;
+    margin-bottom: 0%;
     overflow: hidden;
   }
   .cubespinner {
+    
+
     animation-name: spincube;
-    margin-top: 30%;
+    margin-top: 40%;
+    
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 12s;
@@ -134,4 +143,39 @@
   83% {
     transform: rotateX(90deg);
   }
+}
+
+.about-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004fa0;
+    color: white;
+    margin-top: 30%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    h1{
+        color: #ccc;
+    }
+    .links {
+        width: 50%;
+        display: block;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    a {
+        font-size: 40px;
+        margin-bottom: 5%;
+        margin: 20px;
+    }
+    svg {
+        color: #d8dce7;
+        width: 50px;
+        &:hover{
+            animation: bounce 1s;
+        }
+    }
 }

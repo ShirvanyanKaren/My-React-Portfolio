@@ -8,6 +8,7 @@ import NoteTaker from "../images/notetakerapp.gif";
 import WeatherApp from "../images/weatherapp.gif";
 import AnimatedLetters from "../components/AnimatedLetters";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 const myProjects = [
   {    
@@ -68,6 +69,7 @@ const Portfolio = () => {
         <Projects key={index} project={project} />
       ))}
     </div>
+    <Footer />
     </>
   );
 };
