@@ -1,9 +1,9 @@
 import './Contact.scss'
 import 'animate.css'
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Footer from '../../components/Footer/Footer'
-// import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -12,6 +12,19 @@ const Contact = () => {
             setLetterClass('text-animate text-animate-h')
         }, 1000)
     }, [])
+
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_2znmc3b', 'template_eufeoin', form.current, 'SSUEEoQVq8ReyXV1r')
+        .then((result) => {
+            console.log(result.text);
+            console.log("Email Sent");
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
 return (
    
@@ -29,22 +42,22 @@ return (
     </div>
     <div className="contact">
    
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
 
         <label type="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name" required />
+        <input type="text" name="user_name" placeholder="Your name" required />
 
         <label type="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name" required />
+        <input type="text" name="user_lastname" placeholder="Your last name" required />
 
         <label type="lname"> Email</label>
-        <input type="email" id="lname" name="lastname" placeholder="Your last name" required />
+        <input type="email" name="user_email" placeholder="Your last name" required />
 
         <label type="country">Subject</label>
         <input type="text" name="subject" placeholder="Subject" required></input>
 
         <label type="subject">Message</label>
-        <textarea id="subject" name="subject" placeholder="Your Message" style={{ height: '200px' }} required></textarea>
+        <textarea name="message" placeholder="Your Message" style={{ height: '200px' }} required></textarea>
 
         <button type="submit" >Submit</button>
 
