@@ -1,14 +1,14 @@
-import "../style/Portfolio.scss";
-import WealthWise from "../images/wealthwise.gif";
-import VacationDestination from "../images/vacationdest.gif";
-import Projects from "../components/Projects";
-import Jate from "../images/J.A.T.E.gif";
-import TechBlog from "../images/techblog.gif";
-import NoteTaker from "../images/notetakerapp.gif";
-import WeatherApp from "../images/weatherapp.gif";
-import AnimatedLetters from "../components/AnimatedLetters";
+import "./Portfolio.scss";
+import WealthWise from "../../images/wealthwise.gif";
+import VacationDestination from "../../images/vacationdest.gif";
+import Projects from "../../components/Projects/Projects";
+import Jate from "../../images/J.A.T.E.gif";
+import TechBlog from "../../images/techblog.gif";
+import NoteTaker from "../../images/notetakerapp.gif";
+import WeatherApp from "../../images/weatherapp.gif";
+import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import { useState } from "react";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer/Footer";
 
 const myProjects = [
   {    

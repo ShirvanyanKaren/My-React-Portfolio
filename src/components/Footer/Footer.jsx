@@ -4,7 +4,7 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import "../style/Footer.scss";
+import "./Footer.scss";
 import { NavLink } from "react-router-dom";
 import 'animate.css'
 

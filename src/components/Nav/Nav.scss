@@ -8,12 +8,55 @@
   position: absolute;
 
 
+
+
   nav {
     display: flex;
     justify-content: space-around;
     text-align: center;
     height: 210px;
     top: 100%;
+    .portfolio-active, .about-active, .resume-active, .contact-active {
+      color: #3254a8;
+      &:before {
+        font-size: 12px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 1; 
+        &:hover {
+          display: none;
+        }
+      } 
+
+      svg {
+        opacity: 0;
+        
+  }
+    }
+    .portfolio-active {
+      &:before {
+        content: "PORTFOLIO";
+      }
+    }
+    .about-active {
+      &:before {
+        content: "ABOUT";
+      }
+    }
+    .resume-active {
+      &:before {
+        content: "RESUME";
+      }
+    }
+    .contact-active {
+      &:before {
+        content: "CONTACT";
+      }
+  }
 
     a {
       font-size: 22px;
@@ -28,6 +71,8 @@
         color: #3254a8;
         transition: all 0.3s ease-out;
       }
+     
+
 
       &:hover {
         color: #3254a8;
@@ -43,7 +88,7 @@
 
       &:after {
         content: "";
-        font-size: 9px;
+        font-size: 12px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -77,4 +122,31 @@
       }
     }
   }
+}
+
+.active-linkerdinker {
+  color: #32a865;
+  svg {
+    opacity: 0;
+    
+  }
+  &:after {
+    opacity: 1;
+  }
+
+}
+
+.active-linkerdinker {
+  color: #32a865;
+  a {
+    color: #32a865;
+  }
+  svg {
+    color: #32a865;
+    
+  }
+  &:after {
+    opacity: 1;
+  }
+
 }

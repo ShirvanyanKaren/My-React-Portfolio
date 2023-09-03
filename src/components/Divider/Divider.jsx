@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Divider.scss'; 
+import './Divider.scss'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 

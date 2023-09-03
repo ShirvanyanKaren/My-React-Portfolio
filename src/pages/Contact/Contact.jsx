@@ -1,16 +1,16 @@
-import '../style/Contact.scss'
+import './Contact.scss'
 import 'animate.css'
-import AnimatedLetters from '../components/AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters'
 import { useEffect, useState } from 'react'
-import Footer from '../components/Footer'
+import Footer from '../../components/Footer/Footer'
 // import emailjs from 'emailjs-com';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     useEffect(() => {
         setTimeout(() => {
-            setLetterClass('text-animate-active')
-        }, 3000)
+            setLetterClass('text-animate text-animate-h')
+        }, 1000)
     }, [])
 
 return (

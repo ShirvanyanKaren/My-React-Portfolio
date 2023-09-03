@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import About from './pages/About'
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
+import About from './pages/About/About'
+import Contact from './pages/Contact/Contact';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Resume from './pages/Resume/Resume';
 
 const router = createBrowserRouter([
     {

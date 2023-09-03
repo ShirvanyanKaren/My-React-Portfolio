@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesome icons
 import { faChrome, faGithub, faInternetExplorer } from '@fortawesome/free-brands-svg-icons'; // Import specific icons
-import '../style/Projects.scss';
+import './Projects.scss';
 import 'animate.css'
 
 const Projects = ( {project} ) => {

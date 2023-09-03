@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../style/About.scss';
+import './About.scss';
 import {
     faCss3,
     faHtml5,
@@ -8,8 +8,8 @@ import {
     faNode,
     faReact,
 } from '@fortawesome/free-brands-svg-icons';
-import myPic from "../images/imageofme.png";
-import AnimatedLetters from '../components/AnimatedLetters';
+import myPic from "../../images/imageofme.png";
+import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';

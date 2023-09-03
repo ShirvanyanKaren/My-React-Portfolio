@@ -1,22 +1,22 @@
 
-import "../style/Resume.scss";
+import "./Resume.scss";
 import 'animate.css'
-import Divider from "../components/Divider";
+import Divider from "../../components/Divider/Divider";
 import { useState } from "react";
 import { faBook, faCode, faDownload, faFileCirclePlus, faGear, faLightbulb } from "@fortawesome/free-solid-svg-icons";
-import JavaScript from "../images/logos/javascript.png"
-import Java from "../images/logos/java.png"
-import CPlusPlus from "../images/logos/c++.png"
-import MySQL from "../images/logos/mysql.png"
-import MongoDB from "../images/logos/mongodb.png"
-import NodeJs from "../images/logos/nodejs.png"
-import Mern from "../images/logos/mern.png"
-import HandleBars from "../images/logos/handlebars.png"
-import Berkeley from "../images/logos/berkeley.png"
-import Csun from "../images/logos/csun.png"
+import JavaScript from "../../images/logos/javascript.png"
+import Java from "../../images/logos/java.png"
+import CPlusPlus from "../../images/logos/c++.png"
+import MySQL from "../../images/logos/mysql.png"
+import MongoDB from "../../images/logos/mongodb.png"
+import NodeJs from "../../images/logos/nodejs.png"
+import Mern from "../../images/logos/mern.png"
+import HandleBars from "../../images/logos/handlebars.png"
+import Berkeley from "../../images/logos/berkeley.png"
+import Csun from "../../images/logos/csun.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ResumeDl from "../../Assets/Resume.pdf"
-import Footer from "../components/Footer";
+import ResumeDl from "../../../Assets/Resume.pdf"
+import Footer from "../../components/Footer/Footer";
 
 
 const Resume = () => {
