@@ -16,7 +16,7 @@ export default function Footer() {
         <NavLink
           exact="true"
           className="github"
-          to="github.com/ShirvanyanKaren"
+          to="https://www.github.com/ShirvanyanKaren"
         >
           <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
         </NavLink>
@@ -27,7 +27,7 @@ export default function Footer() {
         >
           <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" className="instagram" to="instagram.com/slshivii">
+        <NavLink exact="true" className="instagram" to="https://www.instagram.com/slshivii">
           <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
         </NavLink>
       </div>
