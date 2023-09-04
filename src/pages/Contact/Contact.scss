@@ -49,3 +49,29 @@ button {
   text-align: center;
   animation: fadeInUp 2s;
 }
+.submission {
+ display: flex;
+ height: 50px;
+.success{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: fadeInUp 2s;
+  width: 70%;
+  margin-left: 10px;
+}
+  svg {
+    color: rgb(154, 233, 165);
+    width: 30px;
+    
+}
+
+}
+
+
+.success-text {
+  color: rgb(154, 233, 165);
+  margin-left: 1px;
+  animation: fadeInUp 2s;
+  
+}
