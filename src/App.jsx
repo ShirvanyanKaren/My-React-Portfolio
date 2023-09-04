@@ -1,34 +1,19 @@
-import './style/App.scss'
-import Nav from './components/Nav/Nav'
-import { Outlet } from 'react-router-dom'
-import AppPar from './components/Particles/Particles';
-import Footer from './components/Footer/Footer';
+import "./style/App.scss";
+import Nav from "./components/Nav/Nav";
+import { Outlet } from "react-router-dom";
+import AppPar from "./components/Particles/Particles";
 
-function Page () {
+
+function App() {
   return (
     <>
-     <AppPar />
-     
-    </>
-  )
-}
-function App() {
-
-    return (
-      
-      <>
-            
-        <div className='App'>
-          <Page className="particles"/>
+      <div className="App">
+        <AppPar className="particles" />
         <Nav />
-       
         <Outlet />
+      </div>
+    </>
+  );
+}
 
-       
-        </div>
-
-      </>
-    );
-  }
-  
-  export default App;
+export default App;

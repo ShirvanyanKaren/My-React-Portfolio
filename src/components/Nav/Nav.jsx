@@ -16,6 +16,9 @@ const Navbar = () => {
   return (
     <div className={`nav-bar${isMenuOpen ? ' open' : ''}`}>
       <nav>
+      <NavLink exact="true" className="my-name" to="/">
+          <a><p>Karen Shirvanyan's Portfolio</p></a>
+        </NavLink>
         <NavLink exact="true" className={currentPage === '/' ? 'about-active' : 'about-link'} to="/">
           <FontAwesomeIcon icon={faHomeUser} color="#4d4d4e" />
         </NavLink>

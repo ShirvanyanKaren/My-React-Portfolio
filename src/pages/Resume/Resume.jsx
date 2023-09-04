@@ -2,7 +2,6 @@
 import "./Resume.scss";
 import 'animate.css'
 import Divider from "../../components/Divider/Divider";
-import { useState } from "react";
 import { faBook, faCode, faDownload, faFileCirclePlus, faGear, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import JavaScript from "../../images/logos/javascript.png"
 import Java from "../../images/logos/java.png"
@@ -38,7 +37,7 @@ const Resume = () => {
             <ul>
               <li>Data Analysis</li>
               <li>Data Structures and Algorithms</li>
-              <li>Wed Development</li>
+              <li>Web Development</li>
             </ul>
             <ul>
               <li>Risk Management</li>
@@ -57,13 +56,13 @@ const Resume = () => {
             <ul>
               <li><img src={JavaScript} /></li>
               <li><img src={Java} /></li>
-              <li><img src={CPlusPlus} /></li>
+              <li><img className="cplus" src={CPlusPlus} /></li>
               <li><img src={MySQL} /></li>
             </ul>
             <ul>
             <li><img src={MongoDB} /></li>
             <li><img src={NodeJs} /></li>
-            <li><img src={Mern} /></li>
+            <li><img className="mern" src={Mern} /></li>
             <li><img src={HandleBars} /></li>
             </ul>
           </div>

@@ -70,7 +70,12 @@ $background-color: #004fa0;
       height: 65px;
       margin: 15px;
       animation: bounceInUp 1.5s;
+      .mern{
+        width: 100px;
+        height: 100px;
+      }
     }
+    
   }
   .education-list {
     display: flex;
@@ -144,6 +149,9 @@ $background-color: #004fa0;
     h3{
       margin-top: 10px;
       font-size: 15px;
+    }
+    p{
+      font-size: 12px;
     }
 
   }

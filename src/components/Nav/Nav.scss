@@ -66,12 +66,22 @@
       height: 51px;
       position: relative;
       text-decoration: none;
-
+      p{
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 3px;
+        color: #3254a8;
+        &:hover{
+          color: #3f5ca3;
+          animation: pulse 1s;
+        }
+      }
       svg {
         color: #3254a8;
         transition: all 0.3s ease-out;
       }
      
+
 
 
       &:hover {
@@ -100,22 +110,22 @@
         transition: all 0.3s ease-out;
       }
 
-      &:first-child {
+      &:nth-child(2) {
         &:after {
           content: "ABOUT";
         }
       }
-      &:nth-child(2) {
+      &:nth-child(3) {
         &:after {
           content: "PORTFOLIO";
         }
       }
-      &:nth-child(3) {
+      &:nth-child(4) {
         &:after {
           content: "RESUME";
         }
       }
-      &:nth-child(4) {
+      &:nth-child(5) {
         &:after {
           content: "CONTACT";
         }
