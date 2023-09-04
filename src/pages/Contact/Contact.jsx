@@ -62,6 +62,7 @@ const Contact = () => {
  
   return (
     <>
+    <div className="contact-container">
       <div className="heading">
         <h1>
           <AnimatedLetters
@@ -142,6 +143,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
+    </div>
       <Footer />
     </>
   );

@@ -1,4 +1,5 @@
 .nav-bar {
+  
   background: #181818;
   width: 100%;
   height: 60px;
@@ -115,7 +116,7 @@
           content: "RESUME";
         }
       }
-      &:last-child {
+      &:nth-child(4) {
         &:after {
           content: "CONTACT";
         }
@@ -123,30 +124,142 @@
     }
   }
 }
-
-.active-linkerdinker {
-  color: #32a865;
-  svg {
-    opacity: 0;
-    
-  }
-  &:after {
-    opacity: 1;
-  }
-
+.burger-nav{
+  display: none;
 }
 
-.active-linkerdinker {
-  color: #32a865;
-  a {
-    color: #32a865;
+
+
+@media only screen and (max-width: 900px ){
+
+
+
+
+
+  .nav-bar svg {
+    display: none;
   }
-  svg {
-    color: #32a865;
-    
-  }
-  &:after {
-    opacity: 1;
+  .nav-bar nav a{
+    display: none;
   }
 
+  .burger-nav{ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    z-index: 11;
+  }
+
+
+   .nav-bar.open {
+    animation:  0.5s fadeIn forwards;
+    height: 100%;
+    width: 30%;
+    min-width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+ 
+ 
+  
+   nav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    background-color: #181818;
+    position: absolute;
+    top: 0;
+    transition: 850ms;
+    
+    a{
+      display: block;
+      font-size: 30px;
+      text-decoration: none;
+      transition: color 0.3s;
+      svg {
+        margin-right: 10px;
+      }
+      &:hover {
+        color: #3254a8;
+      }
+    }
+    svg {
+      display: block
+    }
+
+  }
+
+  .burger-nav{
+    display: block;
+
+  }
+  
+
+}
+}
+
+.burger-menu {
+
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end; // Align the burger menu bars to the right
+  height: 30px;
+  width: 30px;
+  z-index: 11;
+  &.open {
+    .burger-bar:nth-child(1) {
+      transform: rotate(45deg) translate(3px, 3px);
+    }
+    .burger-bar:nth-child(2) {
+      opacity: 0;
+    }
+    .burger-bar:nth-child(3) {
+      transform: rotate(-45deg) translate(3px, -3px);
+    }
+  }
+  .burger-bar {
+    height: 4px;
+    width: 30px;
+    background-color: #3254a8;
+    border-radius: 0.5em;
+    margin: 2px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+}
+
+.menu {
+  display: none;
+  width: 250px;
+  height: 100%;
+  background-color: #181818;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  transition: left 0.3s ease-in-out;
+  &.open {
+    left: 0;
+  }
+
+  a {
+    display: block;
+    padding: 15px;
+    color: #4d4d4e;
+    text-decoration: none;
+    transition: color 0.3s;
+    svg {
+      margin-right: 10px;
+    }
+    &:hover {
+      color: #3254a8;
+    }
+  }
 }

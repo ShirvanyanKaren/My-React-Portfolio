@@ -75,3 +75,86 @@ button {
   animation: fadeInUp 2s;
   
 }
+//create media query for mobile
+@media only screen and (max-width: 1400px) {
+
+//fix the top margin for the heading
+.contact-container {
+  margin-top: 100px;
+}
+}
+
+//create media query for tablet
+@media only screen and (max-width: 1000px) {
+  .contact {
+    width: 400px;
+  }
+  .contact-container {
+    margin-top: 100px;
+  }
+  .heading {
+    margin-top: 10%;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    animation: fadeInUp 2s;
+  }
+  .submission {
+    display: flex;
+    height: 50px;
+    .success {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: fadeInUp 2s;
+      width: 70%;
+      margin-left: 10px;
+    }
+    svg {
+      color: rgb(154, 233, 165);
+      width: 30px;
+    }
+  }
+  .success-text {
+    color: rgb(154, 233, 165);
+    margin-left: 1px;
+
+  }
+}
+
+//create media query for mobile
+@media only screen and (max-width: 700px) {
+  .contact {
+    width: 300px;
+  }
+  .contact-container {
+    margin-top: 100px;
+  }
+  .heading {
+    margin-top: 10%;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    animation: fadeInUp 2s;
+  }
+  .submission {
+    display: flex;
+    height: 50px;
+    .success {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: fadeInUp 2s;
+      width: 70%;
+      margin-left: 10px;
+    }
+    svg {
+      color: rgb(154, 233, 165);
+      width: 30px;
+    }
+  }
+  .success-text {
+    color: rgb(154, 233, 165);
+    margin-left: 1px;
+  }
+}
