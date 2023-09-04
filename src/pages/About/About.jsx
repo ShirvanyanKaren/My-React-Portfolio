@@ -87,7 +87,7 @@ export default function About() {
         <NavLink
           exact="true"
           className="github"
-          to="github.com/ShirvanyanKaren"
+          to="https://www.github.com/ShirvanyanKaren"
         >
           <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
         </NavLink>
