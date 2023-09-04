@@ -81,7 +81,6 @@ const Resume = () => {
             <li><h3>University of Berkeley, California</h3>
             <br/><p>Full Stack Web Development</p></li>
             <li><h3>California State University Northridge</h3><br/><p>Bachelor of Financial Analysis</p></li>
-
           </ul>
           </div>
         </div>

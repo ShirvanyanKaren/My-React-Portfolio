@@ -133,6 +133,21 @@ $background-color: #004fa0;
 @media screen and (max-width: 600px) {
   .resume-container {
     width: 90%;
-    margin-top: 15%;
+    margin-top: 20%;
+  }
+
+  .uni-names {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    h3{
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+  }
+  li{
+    margin-top: 25px;
   }
 }
