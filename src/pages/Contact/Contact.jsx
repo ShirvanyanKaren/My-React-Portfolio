@@ -18,12 +18,59 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [isNameValid, setIsNameValid] = useState(true);
+  const [isLastNameValid, setIsLastNameValid] = useState(true);
+  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isSubjectValid, setIsSubjectValid] = useState(true);
+  const [isMessageValid, setIsMessageValid] = useState(true);
+
+
 
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate text-animate-h");
     }, 1000);
   }, []);
+ 
+ const nameBlurHandler = () =>{
+    if (inputValues.first_name.length < 1) {
+      setIsNameValid(false);
+    } else {
+      setIsNameValid(true);
+    }
+  };
+
+  const lastNameBlurHandler = () => {
+    if (inputValues.last_name.length < 1) {
+      setIsLastNameValid(false);
+    } else {
+      setIsLastNameValid(true);
+    }
+  };
+
+  const emailBlurHandler = () => {
+    if (inputValues.email.length < 1) {
+      setIsEmailValid(false);
+    } else {
+      setIsEmailValid(true);
+    }
+  };
+
+  const subjectBlurHandler = () => {
+    if (inputValues.subject.length < 1) {
+      setIsSubjectValid(false);
+    } else {
+      setIsSubjectValid(true);
+    }
+  };
+
+  const messageBlurHandler = () => {
+    if (inputValues.message.length < 1) {
+      setIsMessageValid(false);
+    } else {
+      setIsMessageValid(true);
+    }
+  };
 
 
   const form = useRef();
@@ -75,6 +122,7 @@ const Contact = () => {
       <div className="contact">
         <form className='myform' ref={form} onSubmit={sendEmail}>
           <label type="fname">First Name</label>
+          {isNameValid ? null : ( <p className="error">Please enter your first name</p>)}
           <input
             type="text"
             id="fname"
@@ -82,11 +130,13 @@ const Contact = () => {
             value={inputValues.first_name}
             onChange={(e) => setInputValues({...inputValues, first_name: e.target.value})
             }
+            onBlur={nameBlurHandler}
             placeholder="Your name"
             required
           />
 
           <label type="lname">Last Name</label>
+          {isLastNameValid ? null : ( <p className="error">Please enter your last name</p>)}
           <input
             id="lname"
             type="text"
@@ -94,23 +144,27 @@ const Contact = () => {
             value={inputValues.last_name}
             onChange={(e) => setInputValues({...inputValues, last_name: e.target.value})
           }
+            onBlur={lastNameBlurHandler}
             placeholder="Your last name"
             required
           />
 
           <label type="lname"> Email</label>
+          {isEmailValid ? null : ( <p className="error">Please enter your email</p>)}
           <input
             id="email"
             type="email"
             name="user_email"
             onChange={(e) => setInputValues({...inputValues, email: e.target.value})
           }
+            onBlur={emailBlurHandler}
             value={inputValues.email}
             placeholder="Your last name"
             required
           />
 
           <label type="subject">Subject</label>
+          {isSubjectValid ? null : ( <p className="error">Please enter a subject</p>)}
           <input
             id="subject"
             type="text"
@@ -118,17 +172,20 @@ const Contact = () => {
             onChange={(e) => setInputValues({...inputValues, subject: e.target.value})
           }
             value={inputValues.subject}
+            onBlur={subjectBlurHandler}
             placeholder="Subject"
             required
           ></input>
 
           <label type="message">Message</label>
+          {isMessageValid ? null : ( <p className="error">Please enter a message</p>)}
           <textarea
             id="message"
             name="message"
             value={inputValues.message}
             onChange={(e) => setInputValues({...inputValues, message: e.target.value})
         }
+            onBlur={messageBlurHandler}
             placeholder="Your Message"
             style={{ height: "200px" }}
             required

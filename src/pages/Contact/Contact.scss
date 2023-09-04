@@ -75,6 +75,14 @@ button {
   animation: fadeInUp 2s;
   
 }
+
+.error {
+  color: red;
+  margin-left: 1px;
+  font-style: italic;
+  animation: fadeInUp 1s;
+}
+
 //create media query for mobile
 @media only screen and (max-width: 1400px) {
 
@@ -156,5 +164,6 @@ button {
   .success-text {
     color: rgb(154, 233, 165);
     margin-left: 1px;
+    
   }
 }
