@@ -3,12 +3,12 @@
 ## Technology used
 | Technology Used and Deployed App       | Resource URL           | 
 | ------------- |:-------------:| 
-| Deployed Application  | [https://pwa-text-editor-shirvanyank-d70c3e71dd6c.herokuapp.com/](https://pwa-text-editor-shirvanyank-d70c3e71dd6c.herokuapp.com/) |
-| My Repository      | [https://github.com/ShirvanyanKaren/PWA-Text-Editor](https://github.com/ShirvanyanKaren/PWA-Text-Editor) |
-|  Vite | [https://vitejs.dev/](https://vitejs.dev/) |
+| Deployed Application | [https://ornate-semifreddo-c866d3.netlify.app/](https://ornate-semifreddo-c866d3.netlify.app/) |
+| My Repository | [https://github.com/ShirvanyanKaren/My-React-Portfolio](https://github.com/ShirvanyanKaren/My-React-Portfolio) |
+| Vite | [https://vitejs.dev/](https://vitejs.dev/) |
 | React | [https://developer.chrome.com/docs/workbox/#injectmanifest_plugin](https://developer.chrome.com/docs/workbox/#injectmanifest_plugin) |
 | sass  | [https://www.npmjs.com/package/nodemon](https://www.npmjs.com/package/nodemon) |
-|  Animate.css | [https://animate.style/#documentation](https://animate.style/#documentation) |
+| Animate.css | [https://animate.style/#documentation](https://animate.style/#documentation) |
 | particlests  | [https://particles.js.org/docs/](https://particles.js.org/docs/) |
 | emailjs  | [https://www.emailjs.com/docs/](https://www.emailjs.com/docs/) |
 | Git | [https://git-scm.com/](https://git-scm.com/)     | 
@@ -52,13 +52,13 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 Here is an example of how the application runs:
 
-![Deployed App](./)
+![Deployed App](./Assets/portfoliogif.gif)
 
 
 
 ## Table of Contents
 * [React](#react)
-* [Vite] (#vite)
+* [Vite](#vite)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)

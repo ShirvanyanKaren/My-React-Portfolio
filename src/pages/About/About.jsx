@@ -7,6 +7,7 @@ import {
     faJsSquare,
     faNode,
     faReact,
+    faSass,
 } from '@fortawesome/free-brands-svg-icons';
 import myPic from "../../images/imageofme.png";
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
@@ -67,7 +68,7 @@ export default function About() {
                  <FontAwesomeIcon icon={faHtml5} color="#F06529" />
                </div>
                <div className="face3">
-                 <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                 <FontAwesomeIcon icon={faSass} color="#c69" />
                </div>
                <div className="face4">
                  <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
