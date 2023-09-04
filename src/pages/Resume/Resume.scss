@@ -7,10 +7,10 @@ $background-color: #004fa0;
   background-color: $background-color;
   color: #ccc;
   height: auto;
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding: 20px;
-  margin-top: 8%;
+  margin-top: 15%;
   border-radius: 8px;
   animation: fadeInUp 1s;
 
@@ -66,8 +66,8 @@ $background-color: #004fa0;
       margin: 10px;
     }
     img {
-      width: 70px;
-      height: 60px;
+      width: 80px;
+      height: 65px;
       margin: 15px;
       animation: bounceInUp 1.5s;
     }
@@ -118,5 +118,21 @@ $background-color: #004fa0;
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .resume-container {
+    width: 85%;
+    margin-top: 15%;
+
+  }
+}
+  
+//media query for 600px
+@media screen and (max-width: 600px) {
+  .resume-container {
+    width: 90%;
+    margin-top: 15%;
   }
 }
