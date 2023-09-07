@@ -6,7 +6,7 @@
 | Deployed Application | [https://ornate-semifreddo-c866d3.netlify.app/](https://ornate-semifreddo-c866d3.netlify.app/) |
 | My Repository | [https://github.com/ShirvanyanKaren/My-React-Portfolio](https://github.com/ShirvanyanKaren/My-React-Portfolio) |
 | Vite | [https://vitejs.dev/](https://vitejs.dev/) |
-| React | [https://developer.chrome.com/docs/workbox/#injectmanifest_plugin](https://developer.chrome.com/docs/workbox/#injectmanifest_plugin) |
+| React | [https://legacy.reactjs.org/docs/getting-started.html](https://legacy.reactjs.org/docs/getting-started.html) |
 | sass  | [https://www.npmjs.com/package/nodemon](https://www.npmjs.com/package/nodemon) |
 | Animate.css | [https://animate.style/#documentation](https://animate.style/#documentation) |
 | particlests  | [https://particles.js.org/docs/](https://particles.js.org/docs/) |
