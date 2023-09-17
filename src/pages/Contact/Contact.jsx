@@ -23,7 +23,9 @@ const Contact = () => {
   const [isEmailValid, setIsEmailValid] = useState(true);
   const [isSubjectValid, setIsSubjectValid] = useState(true);
   const [isMessageValid, setIsMessageValid] = useState(true);
+  
 
+  
 
 
   useEffect(() => {
@@ -71,13 +73,26 @@ const Contact = () => {
       setIsMessageValid(true);
     }
   };
-
+  var templateParams = {
+    first_name:"deez",
+    last_name: "deez",
+    email: "kshirvanyan@gmail.com",
+    subject: "deez",
+    message: "deez",
+};
+ 
+emailjs.send('service_2znmc3b', 'template_eufeoin', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log(form.current)
     emailjs
       .sendForm(
         "service_2znmc3b",
@@ -87,6 +102,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          console.log(form.current)
           console.log(result.text);
           console.log("Email Sent");
           setIsSubmitted(true);

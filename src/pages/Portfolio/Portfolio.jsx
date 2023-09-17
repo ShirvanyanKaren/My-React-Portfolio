@@ -6,11 +6,18 @@ import Jate from "../../images/J.A.T.E.gif";
 import TechBlog from "../../images/techblog.gif";
 import NoteTaker from "../../images/notetakerapp.gif";
 import WeatherApp from "../../images/weatherapp.gif";
+import Logo from "../../images/logo.gif";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 
 const myProjects = [
+  {
+    img: Logo,
+    url: "https://logo-marketplace-f9aad311ca28.herokuapp.com/",
+    repository: "https://github.com/joellongaresjr/Logo-Marketplace",
+    title: "Ecommerce Logo Marketplace",
+  },
   {    
     img: WealthWise,
     url: "https://wealthwise-project2-1bf71934d0b7.herokuapp.com/",
@@ -40,12 +47,6 @@ const myProjects = [
     url: "https://note-taker-app-shirvanyank-f32586d10362.herokuapp.com/",
     repository: "https://github.com/ShirvanyanKaren/notetaker-application",
     title: "Note Taker App",
-  },
-  {
-    img: WeatherApp,
-    url: "https://shirvanyankaren.github.io/Cities-Weather-Dashboard/",
-    repository: "https://github.com/ShirvanyanKaren/Cities-Weather-Dashboard",
-    title: "Weather API App",
   },
 ];
 
