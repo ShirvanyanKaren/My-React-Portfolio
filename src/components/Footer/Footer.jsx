@@ -5,12 +5,29 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import 'animate.css'
 
 export default function Footer() {
+const [previousLocation, setPreviousLocation] = useState(null);
+const [fromHome, setFromHome] = useState(false);
+const location = useLocation();
+
+  useEffect(() => {
+    console.log(previousLocation);
+    if (previousLocation?.pathname === '/' && location.pathname !== '/') {
+      setFromHome(true);
+    }
+    setPreviousLocation(location);
+
+  }, []);
+    
   return (
-    <div className="footer">
+    <div className=
+    {`footer h-100 ${location.pathname === '/' ? 'none' : 'animate-color'} ${fromHome ? 'animate-color' : ''}`}>
       <h1>Connect with me!</h1>
       <div className="links">
         <NavLink

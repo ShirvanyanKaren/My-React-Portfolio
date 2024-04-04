@@ -96,7 +96,8 @@ img {
   }
   .face2 {
     transform: rotateY(90deg) translateZ(100px);
-    color: #f06529;
+    color: "#fff"
+
   }
   .face3 {
     transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
@@ -142,12 +143,13 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #004fa0;
+  background-color: #181818;
   color: white;
   margin-top: 30%;
   right: 0;
   left: 0;
   bottom: 0;
+
 
   h1 {
     color: #ccc;

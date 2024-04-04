@@ -4,7 +4,23 @@ $btn-color: #3254a8;
 $hover-color: #2c4b8e;
 
 @import 'animate.css';
+html {
+    // the 
+    scroll-behavior: smooth;
 
+    height: 100%;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    // change view height to 100% to make the page responsive
+    height: fit;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: #333;
+    overflow-x: hidden;
+}
 
 
 #tsparticles {
@@ -14,7 +30,9 @@ $hover-color: #2c4b8e;
     z-index: -10;
 }
 
-
+.none {
+    display: none;
+}
 
 
 input, 

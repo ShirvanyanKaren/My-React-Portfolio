@@ -81,7 +81,7 @@ const Contact = () => {
     message: "deez",
 };
  
-emailjs.send('service_2znmc3b', 'template_eufeoin', templateParams)
+emailjs.send('service_2znmc3b', 'template_eufeoin', "SSUEEoQVq8ReyXV1r", templateParams)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
@@ -217,7 +217,6 @@ emailjs.send('service_2znmc3b', 'template_eufeoin', templateParams)
         </form>
       </div>
     </div>
-      <Footer />
     </>
   );
 };

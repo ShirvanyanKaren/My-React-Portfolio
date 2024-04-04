@@ -8,8 +8,11 @@ import {
     faNode,
     faReact,
     faSass,
+    faPython,
 } from '@fortawesome/free-brands-svg-icons';
+import Python from '../../images/logos/python.png';
 import myPic from "../../images/imageofme.png";
+
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
@@ -39,8 +42,8 @@ export default function About() {
         </h1>
         </div>
         <p> I am a motivated university undergraduate student pursuing a
-          major in Finance with a minor in computer science. I am eager to
-          launch my career in the myriad of dynamic realms of finance and fintech.
+          major in Finance with a minor in Computer Science. I am eager to
+          launch my career as a Software Engineer or Quantitative Analyst.
         </p>
         <p>
           I am actively seeking job and experience opportunities to leverage and
@@ -50,10 +53,10 @@ export default function About() {
           in these industries.
         </p>
         <p>
-          I am currently enrolled in the UC Berkeley Coding Bootcamp where I have honed my
+          I recently completed the UC Berkeley Coding Bootcamp where I honed my
           abilities and developed various projects that are attached to my portfolio.
           With a passion in finance and technology, I am poised to contribute to the ever-changing
-          of the tech and financial tech industries.
+          tech and finance industries.
         </p>
         </div>
         </div>
@@ -64,9 +67,9 @@ export default function About() {
                <div className="face1">
                  <FontAwesomeIcon icon={faNode} color="#68a063" />
                </div>
-               <div className="face2">
-                 <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-               </div>
+                <div className="face2">
+                  <FontAwesomeIcon icon={faPython} color="#28a4d9" />
+                </div>
                <div className="face3">
                  <FontAwesomeIcon icon={faSass} color="#c69" />
                </div>

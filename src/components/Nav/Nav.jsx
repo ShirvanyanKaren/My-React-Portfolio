@@ -12,6 +12,10 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  // on click outside of menu, close menu
+
+
+
 
   return (
     <div className={`nav-bar${isMenuOpen ? ' open' : ''}`}>

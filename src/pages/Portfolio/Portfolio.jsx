@@ -70,7 +70,6 @@ const Portfolio = () => {
         <Projects key={index} project={project} />
       ))}
     </div>
-    <Footer />
     </>
   );
 };
