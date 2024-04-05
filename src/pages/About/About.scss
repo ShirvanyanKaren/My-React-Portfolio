@@ -7,14 +7,12 @@
   animation: fadeInLeft 1s forwards;
   color: #ccc;
   h1 {
-    font-family: serif;
     font-weight: 400;
     color: #ccc;
     font-size: 50px;
   }
 
   p {
-    font-family: sans-serif;
     font-weight: 300;
     min-width: fit-content;
 
@@ -151,8 +149,9 @@ img {
   bottom: 0;
 
 
-  h1 {
+  h1, p {
     color: #ccc;
+    font-family: roboto;
   }
   .links {
     width: 70%;
@@ -174,6 +173,7 @@ img {
     }
   }
 }
+
 //media query for 1200px
 @media only screen and (max-width: 1200px) {
   .about-footer {

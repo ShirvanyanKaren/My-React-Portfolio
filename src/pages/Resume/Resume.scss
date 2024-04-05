@@ -3,7 +3,6 @@ $hover-color: #858ee5;
 $background-color: #004fa0;
 
 .resume-container {
-
   background-color: $background-color;
   color: #ccc;
   height: auto;
@@ -67,13 +66,21 @@ $background-color: #004fa0;
     }
     img {
       width: 80px;
-      height: 65px;
+      height: 80px;
       margin: 15px;
       animation: bounceInUp 1.5s;
-      .mern{
-        width: 100px;
-        height: 100px;
-      }
+      // &.mern{
+      //   width: 100px;
+      //   height: 100px;
+      // }
+      // &.cplus{
+      //   width: 100px;
+      //   height: 100px;
+      // }
+      // &.python{
+      //   width: 100px;
+      //   height: 100px;
+      // }
     }
     
   }

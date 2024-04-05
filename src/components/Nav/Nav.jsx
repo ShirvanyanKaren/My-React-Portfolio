@@ -23,18 +23,21 @@ const Navbar = () => {
       <NavLink exact="true" className="my-name" to="/">
           <a><p>Karen Shirvanyan's Portfolio</p></a>
         </NavLink>
-        <NavLink exact="true" className={currentPage === '/' ? 'about-active' : 'about-link'} to="/">
+        <NavLink exact="true" className={currentPage === '/' ? 'about-active' : 'about-link'} onClick={toggleMenu} to="/">
           <FontAwesomeIcon icon={faHomeUser} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
+          onClick={toggleMenu}
           className={currentPage === '/Portfolio' ? 'portfolio-active' : 'portfolio-link'}
           to="/Portfolio"
         >
           <FontAwesomeIcon icon={faFolder} color="#4d4d4e" />
         </NavLink>
         <NavLink
+
           exact="true"
+          onClick={toggleMenu}
           className={currentPage === '/Resume' ? 'resume-active' : 'resume-link'}
           to="/Resume"
         >
@@ -42,6 +45,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           exact="true"
+          onClick={toggleMenu}
           className={currentPage === '/Contact' ? 'contact-active' : 'contact-link'}
           to="/Contact"
         >

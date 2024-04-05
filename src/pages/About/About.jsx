@@ -10,13 +10,17 @@ import {
     faSass,
     faPython,
 } from '@fortawesome/free-brands-svg-icons';
-import Python from '../../images/logos/python.png';
+import python from '../../images/logos/python-svg-icon.svg';
 import myPic from "../../images/imageofme.png";
 
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+// how to insert svg logo into the cube
+import Python  from '../../images/logos/python-svg-icon.svg';
+import Cpp  from '../../images/logos/cpp.svg';
 
 export default function About() {
     const [letterClass] = useState('text-animate');
@@ -68,7 +72,7 @@ export default function About() {
                  <FontAwesomeIcon icon={faNode} color="#68a063" />
                </div>
                 <div className="face2">
-                  <FontAwesomeIcon icon={faPython} color="#28a4d9" />
+                <img src={Python} alt="Python" />
                 </div>
                <div className="face3">
                  <FontAwesomeIcon icon={faSass} color="#c69" />
@@ -80,7 +84,7 @@ export default function About() {
                  <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
                </div>
                <div className="face6">
-                 <FontAwesomeIcon icon={faJava} color="#2488e2" />
+                 <img src={Cpp} alt="CPlus" />
                </div>
              </div>
            </div>

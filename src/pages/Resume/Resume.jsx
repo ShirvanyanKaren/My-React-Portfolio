@@ -8,14 +8,17 @@ import Java from "../../images/logos/java.png"
 import CPlusPlus from "../../images/logos/c++.png"
 import MySQL from "../../images/logos/mysql.png"
 import MongoDB from "../../images/logos/mongodb.png"
+import ReactLogo from "../../images/logos/react.png"
 import NodeJs from "../../images/logos/nodejs.png"
 import Mern from "../../images/logos/mern.png"
 import HandleBars from "../../images/logos/handlebars.png"
 import Berkeley from "../../images/logos/berkeley.png"
 import Csun from "../../images/logos/csun.png"
+import Python from "../../images/logos/python.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ResumeDl from "../../../Assets/Resume.pdf"
 import Footer from "../../components/Footer/Footer";
+import Git from "../../images/logos/git-logo.png"
 
 
 const Resume = () => {
@@ -55,15 +58,16 @@ const Resume = () => {
           <div className="program-list">
             <ul>
               <li><img src={JavaScript} /></li>
-              <li><img src={Java} /></li>
+              <li><img src={NodeJs} /></li>
               <li><img className="cplus" src={CPlusPlus} /></li>
-              <li><img src={MySQL} /></li>
+              <li><img className="python" src={Python} /></li>
+
             </ul>
-            <ul>
+            <ul className="text-center">
+            <li><img src={Git} /></li> 
+            <li><img src={MySQL} /></li>
             <li><img src={MongoDB} /></li>
-            <li><img src={NodeJs} /></li>
-            <li><img className="mern" src={Mern} /></li>
-            <li><img src={HandleBars} /></li>
+            <li><img src={ReactLogo} /></li>
             </ul>
           </div>
         </div>
